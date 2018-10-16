@@ -1,0 +1,14 @@
+import { <%= props.constantString %>_ACTIONS } from './<%= props.kebabCase %>.actions'
+
+export const INITIAL_<%= props.constantString %>_STATE = {}
+
+export const <%= props.camelCase %>Reducer = (
+  state = INITIAL_<%= props.constantString %>_STATE,
+  action = {},
+) => {
+  switch(action.type) {
+    default: {
+      return state;
+    }
+  }
+}

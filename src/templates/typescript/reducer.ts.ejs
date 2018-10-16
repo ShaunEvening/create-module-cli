@@ -1,0 +1,16 @@
+import { <%= props.pascalCase %>ActionTypes, <%= props.pascalCase %>Actions } from './<%= props.kebabCase %>.actions.js'
+
+export interface <%= props.pascalCase %>State {}
+
+export const INITIAL_<%= props.constantString %>_STATE: <%= props.pascalCase %>State = {}
+
+export const <%= props.camelCase %>Reducer = (
+  state = INITIAL_<%= props.constantString %>_STATE,
+  action: <%= props.pascalCase %>Actions,
+) => {
+  switch(action.type) {
+    default: {
+      return state;
+    }
+  }
+}
